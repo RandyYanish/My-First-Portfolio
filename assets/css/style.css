@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+div {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: #F9F9F9;
@@ -36,7 +40,7 @@ nav ul li {
     margin-left: 25px;
 }
 
-.Headshot { 
+.avatar { 
     display: flex;
     width: 150px;
     height: auto;
@@ -45,33 +49,3 @@ nav ul li {
     border-radius: 15%;
 }
 
-.about  {
-    aspect-ratio: 1 / 1.6;
-    border: 0.5vmin solid var(--border);
-    cursor: pointer;
-    position: relative;
-    width: 56vmin;
-}
-
-.about:before { 
-    background: linear-gradient(
-        130deg,
-        transparent 0% 33%,
-        var(--g1) 66%,
-        var(--g2) 83.5%,
-        var(--g3) 100%
-    );
-    background-position: 0% 0%;
-    background-size: 300% 300%;
-    content: "";
-    height: 100%;
-    left: 0px;
-    pointer-events: none;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-}
-
-.about:hover:before {
-    background-position: 100% 100%;
-}   
