@@ -14,7 +14,6 @@
 
 a {
     text-decoration: none;
-
 }
 
 body {
@@ -30,11 +29,14 @@ h1 {
 
 header {
     display: flex;
-    border: #70798C solid 1px;
+    box-shadow: #70AE6E 0 5px 3em;
     justify-content: space-between;
     align-items: center;
     padding-left: 80px;
     padding-right: 80px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-shadow: #fde7d0 0 0 .5em;
 }
 
 nav a {
@@ -50,13 +52,14 @@ nav ul li {
 
 nav a:hover {
     color: #B87D4B;
-    transition: 350ms;
+    transition: 350ms ease-in-out;
 }
 
 .avatar {
     width: 150px;
     height: auto;
     border-radius: 1rem;
+    box-shadow: #70AE6E 0 0 3em;
 }
 
 /* Main content styling */
@@ -70,10 +73,73 @@ main {
 
 .about {    
     border: #70798C solid 1px;
+    margin: 30px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     position: fixed;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: #70798C solid 1px;
+}
+
+.work h2 {
+    margin-left: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.main-card {
+    /* border: #70798C solid 1px; */
+    border-radius: 1rem;
+    width: 800px;
+    height: 500px;
+    justify-content: flex-end;
+    margin: 30px;
+    box-shadow: #70AE6E 5px 5px .5em;
+    overflow: hidden;
+}
+
+.main-card .image {
+    display: block;
+    background-image: url(https://unsplash.com/photos/6JVlSdgMacE);
+    width: auto;
+    height: 400px;
+    /* border: #70798C solid 10px;  */
+}
+
+.main-card h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 36px;
+    padding-left: 10px;
+    width: 800px;
+    height: 100px;
+    background-color: rgba(112, 174, 110, .40);
+}
+
+.main-card:hover {
+    box-shadow: #B87D4B 5px 5px .5em;
+    transition: 350ms ease-in-out;
+}
+
+.sub-cards {
+    display: block;
+    margin-right: 80px;
+}
+
+.sub-card {
+    display: block;
+    columns: 2;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    border: #70798C solid 1px;
 }
